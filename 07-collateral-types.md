@@ -2,7 +2,7 @@
 
 It is important to remain stable, secure, and decentralized
 
-Moor Protocol will support multiple collateral types. We have included a host of Liquid staking tokens which will allow massive amounts of liquidity to be unlocked, ensuring that there is enough collateral to grow the stablecoin market cap long-term.
+Moor will support multiple collateral types. We have included a host of Liquid staking tokens which will allow massive amounts of liquidity to be unlocked, ensuring that there is enough collateral to grow the stablecoin market cap long-term.
 
 **Collateral Types Supported:**
 

@@ -6,9 +6,9 @@ Liquidation mechanism and stability pool overview
 
 Similar to Liquity Protocol, users can earn and generate yield via the Stability Pool, which is the first line of defense in maintaining system solvency. It achieves this by acting as the source of liquidity to repay debt from liquidated Troves, ensuring that the total supply of USDM always remains fully backed. Stability pool deposits both absorb and cancel associated debt from Troves that have defaulted.
 
-The Stability Pool is funded by users transferring USDM into it (otherwise known as Stability Providers). Over time, Stability Providers lose a pro-rata share of their USDM deposits, while gaining a pro-rata share of the liquidated collateral. However, because Troves are likely to be liquidated at just below `135%` collateral ratios, it is expected that Stability Providers will receive a greater dollar-value of collateral relative to the debt they pay off.
+The Stability Pool is funded by users transferring USDM into it (otherwise known as Stability Providers). Over time, Stability Providers lose a pro-rata share of their USDM deposits, while gaining a pro-rata share of the liquidated collateral. However, because Troves are likely to be liquidated at just below `150%` collateral ratios, it is expected that Stability Providers will receive a greater dollar-value of collateral relative to the debt they pay off.
 
-Users can withdraw collateral from the stability pool at any time when there are no troves below 135% CR.
+Users can withdraw collateral from the stability pool at any time when there are no troves below 150% CR.
 
 ### Depositors
 
@@ -20,13 +20,13 @@ If the Stability Pool is empty, the system uses a secondary liquidation mechanis
 
 ### Single Stability Pool
 
-There is only one stability pool in Moor Protocol. This is to ensure there is enough collateral to handle large liquidations and prevent liquidity fragmentation. Stability pool providers will earn exposure to their collateral.
+There is only one stability pool in Moor. This is to ensure there is enough collateral to handle large liquidations and prevent liquidity fragmentation. Stability pool providers will earn exposure to their collateral.
 
 ## Partial Liquidations
 
 When a Trove is liquidated, the amount of USDM contained in the Trove multiplied by the Close Factor is burned from the Stability Pool's balance to repay its debt.
 
-In exchange, 110% of the corresponding dollar value amount of collateral from the Trove is transferred to the Stability Pool (minus 0.5% liquidation gas fee). For instance, if a user is liquidated on a 1000 USDM Trove at 130% CR, $500 in USDM will be repaid by the stability pool. $550 (110% of 500) of collateral is then sent to the stability pool (minus 0.5% liquidation gas fee). Now the Trove is left with 500 USDM debt and $750 in collateral, returning the user to a safe CR of 150%. Stability pool participants earn roughly the same fee as in Liquity (~10%). The Close Factor is hardcoded at 50%, the same factor used by Aave, Compound, and MAI. Partial liquidations are the norm in DeFi, used by Aave, Compound, and MAI among others. Moor Protocol is the first Liquity-inspired protocol to use partial liquidations.
+In exchange, 110% of the corresponding dollar value amount of collateral from the Trove is transferred to the Stability Pool (minus 0.5% liquidation gas fee). For instance, if a user is liquidated on a 1000 USDM Trove at 130% CR, $500 in USDM will be repaid by the stability pool. $550 (110% of 500) of collateral is then sent to the stability pool (minus 0.5% liquidation gas fee). Now the Trove is left with 500 USDM debt and $750 in collateral, returning the user to a safe CR of 175%. Stability pool participants earn roughly the same fee as in Liquity (~10%). The Close Factor is hardcoded at 50%, the same factor used by Aave, Compound, and MAI. Partial liquidations are the norm in DeFi, used by Aave, Compound, and MAI among others. Moor is the first Liquity-inspired protocol to use partial liquidations.
 
 ### Benefits of Partial Liquidations
 
