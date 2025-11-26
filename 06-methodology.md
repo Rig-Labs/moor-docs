@@ -1,20 +1,20 @@
 # Methodology
 
-## How is Moor Protocol different from algorithmic stablecoins?
+## How is Moor different from algorithmic stablecoins?
 
-Moor Protocol is designed to be over-collateralized, meaning there should be more collateral in the protocol than outstanding debt. Moor Protocol uses battle tested market incentives to achieve this.
+Moor is designed to be over-collateralized, meaning there should be more collateral in the protocol than outstanding debt. Moor uses battle tested market incentives to achieve this.
 
-## What measures are in place to protect Moor Protocol from black swan events/flash crash?
+## What measures are in place to protect Moor from black swan events/flash crash?
 
 The system is designed to withstand significant price volatility in underlying collateral. The first line of defense is the stability pool, and the last line of defense is redistribution of collateral amongst Troves.
 
 ## Price Oracles
 
-Moor Protocol requires real-time information about the market price of the collateral assets in order to know when to trigger Liquidations. Oracle price feed problems or irrational market dynamics that cause variations in the price of the collateral type for an extended period of time can occur. Thus far, Moor has integrated Pyth and Stork Oracle price feeds.
+Moor requires real-time information about the market price of the collateral assets in order to know when to trigger Liquidations. Oracle price feed problems or irrational market dynamics that cause variations in the price of the collateral type for an extended period of time can occur. Thus far, Moor has integrated Pyth and Stork Oracle price feeds.
 
 ## Smart Contract Infrastructure
 
-One of the prominent risks to Moor Protocol is a bad actor, who discovers a vulnerability in the deployed smart contracts, and then uses it to break the Protocol or steal from it.
+One of the prominent risks to Moor is a bad actor, who discovers a vulnerability in the deployed smart contracts, and then uses it to break the Protocol or steal from it.
 
 In the worst-case scenario, all decentralized digital assets held as collateral in the Protocol are stolen, and recovery of these assets is impossible.
 
