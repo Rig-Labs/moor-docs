@@ -16,9 +16,3 @@ Criteria to add Liquid Staked tokens as a collateral type:
 - Trust minimized & timely redemption mechanism. If the liquid-staked asset can be easily redeemed for underlying collateral tokens, it greatly reduces the potential for Liquidation Cascade.
 - Potentially higher collateralization ratio for Liquid Staked tokens.
 - Oracle price feed
-
-Collateral types we do not intend to support:
-
-- Centralized stablecoins like USDC/USDT
-
-Centralized stablecoins such as USDC and USDT are subject to regulatory freezing and mismanagement of collateral by centralized issuance entities, again posing massive counterparty risk to a decentralized stablecoin protocol.
