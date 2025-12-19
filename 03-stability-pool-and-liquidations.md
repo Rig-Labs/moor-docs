@@ -30,7 +30,7 @@ In exchange, 110% of the corresponding dollar value amount of collateral from th
 
 ### Benefits of Partial Liquidations
 
-Partial Liquidations protect and therefore retain users in the protocol. Losing 10% of an entire Trove in one liquidation is a large financial loss for users. Most importantly, Partial Liquidations soften market impact from liquidation sell-offs, reducing the systemic risk of a Liquidation Cascade. Partial liquidations also reduce the amount of idle USDM needed to be sitting in the stability at a giving time, increasing overall efficiency of the system and the velocity of money.
+Partial Liquidations protect and therefore retain users in the protocol. Losing 100% of an entire Trove in one liquidation is a large financial loss for users. Most importantly, Partial Liquidations soften market impact from liquidation sell-offs, reducing the systemic risk of a Liquidation Cascade. Partial liquidations also reduce the amount of idle USDM needed to be sitting in the stability at a giving time, increasing overall efficiency of the system and the velocity of money.
 
 ## Triggering Liquidations
 
